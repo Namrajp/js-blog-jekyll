@@ -4,38 +4,54 @@ layout: post
 
 # Installation of ruby
 
-$ brew install ruby #on mac
-$ sudo gem install bundler
+  <code class="language-javascript">
+    $ brew install ruby #on mac
+    $ sudo gem install bundler
+  </code>
 
 ## Installing jekyll site
 
 To add a site on current folder use . To specify new folder type
 
-$ jekyll new new_folder  
-$ jekyll new .  
-$ bundle add webrick # error: webrick
+<pre>
+  <code class="language-javascript">
+    $ jekyll new new_folder  
+    $ jekyll new \.  
+    $ bundle add webrick # error: webrick
+  </code>
+</pre>
 
 ## Running for first time with live reload, by default comes with --watch.
 
-$bundle exec jekyll serve --liveReload
+  <code class="language-javascript">
+    $bundle exec jekyll serve --liveReload
+  </code>
 
 ## Update and install
 
-$ bundle update
-$ bundle install
+  <code class="language-javascript">
+    $ bundle update
+    $ bundle install
+  </code>
 
 ## Pushing jekyll blog to github pages
 
-Make a copy of your \_config.yml and call it \_config_dev.yml.
+Make a copy of your <code class="language-javascript">\_config.yml</code> and call it <code class="language-javascript">\_config_dev.yml</code>
 
-Leave the \_config_dev.yml as is, and change \_config.yml for the live site.
+Leave the <code class="language-javascript">\_config*dev.yml</code> as is, and change <code class="language-javascript">\_config*.yml</code> for the live site.
+<code class="language-javascript">
 baseurl: '/js-blog-jekyll'
 url: 'https://Namrajp.github.io'
+</code>
 
 ### To run local site and leave blog on github running,run command:
 
-$ jekyll serve --config \_config.yml,\_config_dev.yml
+<pre>
+  <code class="language-javascript">
+    $ jekyll serve --config \_config.yml,\_config_dev.yml
+    $ git remote add origin https://github.com/Namrajp/js-blog-jekyll.git
+  </code>
+</pre>
 
-$ git remote add origin https://github.com/taniarascia/startjekyll.git
 Then add and commit files.
-$ git push origin gh-pages
+<code class="language-javascript">$ git push origin gh-pages</code>
