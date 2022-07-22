@@ -21,9 +21,9 @@
 title: js jekyll Blog
 email: active99raj@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A Simple place on internet where I post about Web development and Programming all things.
+  A place on internet where I post about Web development and Programming all things.
 baseurl: "/js-blog-jekyll" # the subpath of your site, e.g. /blog
-url: "https://namrajp.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://namrajp.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: wouraj
 github_username: Namrajp
 
@@ -33,6 +33,9 @@ plugins:
   - jekyll-feed
 sass:
   sass_dir: _sass
+include: ["_pages"]
+kramdown:
+  input: GFM
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
