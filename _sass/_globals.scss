@@ -1,0 +1,36 @@
+:root {
+  --dark: #444;
+  --primary: #ddd;
+  // --light: #eee;
+  --light: #ddd;
+  --light-shadow: rgb(255, 99, 71);
+}
+
+html {
+  font-size: 18px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h1 {
+  font-size: 2rem;
+}
+.logo,
+.fa-solid {
+  font-size: 1.6rem;
+}
+
+ul.show-links {
+  height: 16rem;
+}
+a {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}

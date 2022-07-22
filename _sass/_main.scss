@@ -1,0 +1,171 @@
+// ul.nav-main {
+//   display: flex;
+//   list-style: none;
+// }
+// li {
+//   display: inline-block;
+//   a {
+//     color: white;
+//     background-color: black;
+//     margin-right: 2rem;
+//     padding: 0.5rem 1rem;
+//   }
+// }
+main {
+  padding: 50px 0;
+}
+#home {
+  display: flex;
+}
+section {
+  padding: 3rem;
+}
+.logo,
+.fa-solid {
+  font-size: 1.6rem;
+}
+ul.show-links {
+  // needs ul and dot in codepen or bootstrap
+  height: 16rem;
+}
+.links {
+  height: 0;
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: var(--dark);
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--light);
+    display: block;
+    padding: 10px 20px;
+    &:hover {
+      background: var(--light);
+      color: var(--dark);
+    }
+    &.active {
+      background: var(--light);
+      color: var(--dark);
+    }
+  }
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--dark);
+}
+
+@media (min-width: 700px) {
+  .links {
+    height: auto !important; // needs !important in bootstrap or codepen
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+  }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  nav {
+    background: var(--dark);
+  }
+}
+
+nav {
+  box-shadow: 0 5px 15px #aaa;
+}
+body {
+  color: var(--dark);
+  margin: 0;
+}
+/* section idenfitiers # */
+// section {
+//   padding: 50px;
+// }
+// /*# sourceMappingURL=style.css.map */
+// #compiled,
+// #cli_vs_gui,
+// #networking,
+// #home {
+//   height: 100vh;
+//   padding: 3rem;
+//   border: 2px double maroon;
+//   color: #222;
+// }
+// #home {
+//   background-color: #aaa;
+//   display: flex;
+// }
+// #cli_vs_gui {
+//   background-color: #ccc;
+// }
+// #networking {
+//   background-color: #bbb;
+// }
+// #compiled {
+//   background-color: #aaa;
+//   display: flex;
+// }
+// .sidebar {
+//   flex-direction: column;
+//   background: transparent;
+//   height: auto;
+//   /* border: 1px solid white; */
+//   max-height: 200px;
+//   width: 150px;
+//   margin-right: 2rem;
+// }
+// .card {
+//   background: var(--light);
+//   max-width: 70%;
+//   padding: 2rem;
+// }
+
+// /* Add fixed nav for scroll */
+// .fixed-navbar {
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   /* background: #fff; */
+//   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+// }
+
+// Remove lines below just here dumped off single page sp.
+// #home,
+// #about,
+// #media,
+// #blog {
+//   height: 100vh;
+//   padding: 3rem;
+//   border: 2px double maroon;
+//   color: #222;
+// }
+// #home {
+//   background-color: #ddd;
+// }
+// #about {
+//   background-color: #ccc;
+// }
+// #media {
+//   background-color: #bbb;
+// }
+// #blog {
+//   background-color: #aaa;
+// }
