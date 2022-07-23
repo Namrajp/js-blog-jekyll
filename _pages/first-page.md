@@ -5,4 +5,7 @@ permalink: /firstblog/
 order: 3
 ---
 
-This is blog index page. I have list of posts here below:-
+This is page about me.  
+I am a web developer.  
+I like programming,  
+I love music and I like travelling.

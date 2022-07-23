@@ -4,10 +4,10 @@ layout: post
 
 # Installation of ruby
 
-  <code class="language-javascript">
-    $ brew install ruby #on mac
-    $ sudo gem install bundler
-  </code>
+<code class="language-bash">
+$ brew install ruby #on mac
+$ sudo gem install bundler
+</code>
 
 ## Installing jekyll site
 
