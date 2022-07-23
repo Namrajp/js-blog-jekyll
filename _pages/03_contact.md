@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
+order: 4
 ---
 
 Please contact me at my email [your-email@example.com](http://your-email@example.com).

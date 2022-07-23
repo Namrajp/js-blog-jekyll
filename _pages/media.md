@@ -2,6 +2,7 @@
 layout: page
 title: Media
 permalink: /media/
+order: 2
 ---
 
 Some media links

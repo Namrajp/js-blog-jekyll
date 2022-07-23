@@ -10,10 +10,11 @@
       <button class="nav-toggle" href="#"><i class="fa-solid fa-bars" style="font-size: 2rem"></i></button>
     </div>
     <ul class="links">
-      {% for page in site.pages %} {% if page.title %}
+      <li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
+      {% assign sorted_pages = site.pages | sort:"order" %}
+      {% for page in sorted_pages | sort:"order" %} {% if page.title %}
       <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
       {% endif %} {% endfor %}
-      <li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
     </ul>
   </div>
 </nav>
