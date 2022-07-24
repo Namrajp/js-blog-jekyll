@@ -1,15 +1,16 @@
 ---
 layout: post
+title: useState and useEffect Hooks
 ---
 
-# Intro to props and State in React
+# Introduction to props and State in React
 
 Components is an isolated piece of interface. A blog website has sidebar and list of posts. Each post and list of posts are components. They are composed of other components.
 Functional and Class components are there, first one is popular.
 
 Example functional component:
 
-```jsx
+```js
 const BlogPostExcerpt = () => {
   return (
     <div>
@@ -22,7 +23,7 @@ const BlogPostExcerpt = () => {
 
 Class based component
 
-```jsx
+```js
 import React, { Component } from "react";
 
 class BlogPostExcerpt extends Component {
@@ -39,7 +40,7 @@ class BlogPostExcerpt extends Component {
 
 ## Props They are way to pass properties to components from top component to its every child.
 
-```jsx
+```js
 const BlogPostExcerpt = (props) => {
   return (
     <div>
@@ -52,7 +53,7 @@ const BlogPostExcerpt = (props) => {
 
 We can pass props in similar to HTML ATTRIBUTES, when we initialize it.
 
-```jsx
+```js
 const desc = 'A description'
 //...
 <BlogPostExcerpt title="A blog post" description={desc} />

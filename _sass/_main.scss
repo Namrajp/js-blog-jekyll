@@ -21,6 +21,9 @@ section {
 .logo,
 .fa-solid {
   font-size: 1.6rem;
+  &:hover {
+    border: 1px solid var(--primary);
+  }
 }
 ul.show-links {
   // needs ul and dot in codepen or bootstrap
@@ -49,8 +52,7 @@ ul.show-links {
       color: var(--dark);
     }
     &.active {
-      background: var(--light);
-      color: var(--dark);
+      border: 1px solid var(--light);
     }
   }
 }
@@ -92,6 +94,7 @@ body {
   color: var(--dark);
   margin: 0;
 }
+
 /* section idenfitiers # */
 // section {
 //   padding: 50px;

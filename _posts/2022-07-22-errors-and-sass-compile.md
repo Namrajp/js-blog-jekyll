@@ -2,26 +2,26 @@
 layout: post
 ---
 
-<section id="sass-compile">
+<section>
         <div class="card">
           <div class="card-title">
-            <h1>Blog Page title</h1>
             <h2>How to compile sass</h2>
           </div>
           <div class="card-info">
 
-            <pre>
-              <code class="language-javascript">
+            {% highlight css %}
+
                 Syntax: sass <input.scss> [output.css]
                 $ sass style.scss:style.css
-              </code></pre>
+            {% endhighlight %}
+
 
             <h2>Many-to-many Mode
             </h2>
             <p>​# Compiles all Sass files in themes/ to CSS files in public/css/.
             </p>
             <p>
-              <code>$ sass themes:public/css</code>
+              <code class=".mycode">$ sass themes:public/css</code>
             </p><br>
             <a href="https://sass-lang.com/documentation/cli/dart-sass">Sass official dart sass documentation</a>
           </div>
