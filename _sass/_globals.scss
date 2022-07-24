@@ -1,6 +1,6 @@
 :root {
   --dark: #444;
-  --primary: #ddd;
+  --primary: #999;
   // --light: #eee;
   --light: #ddd;
   --light-shadow: rgb(255, 99, 71);
@@ -39,7 +39,6 @@ footer {
 
 /**** Card Styles ******/
 .card {
-  border: 1px solid #ccc;
   padding: 2rem;
 }
 .card-title h3 {
@@ -47,7 +46,24 @@ footer {
 }
 article#first-article {
   display: grid;
-  grid-gap: 60px;
+  grid-gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
+article#first-article .card {
+  border: 1px solid var(--primary);
+}
 /**** Card Styles ******/
+
+#post {
+  padding: 1rem 5rem;
+}
+
+.highlight {
+  background-color: #444;
+  color: #ddd;
+  width: 600px;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #444;
+}
